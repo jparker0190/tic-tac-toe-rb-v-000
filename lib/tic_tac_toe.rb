@@ -88,10 +88,9 @@ def winner(board)
   end
 end
 def play(board)
-if won?(board)
-  puts"Congrations #{winner}!"
-  elsif draw?(board)
-  puts"Cat's Game!"
-end
-end
+    plays = 0
+  until plays == 9 do
+    turn(board)
+    plays += 1
+  end
 end
