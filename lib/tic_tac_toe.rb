@@ -89,9 +89,6 @@ def winner(board)
 end
 def play(board)
   input = gets
-    plays = 0
-  until plays == 9 do
-    turn(board)
-    plays += 1
-  end
+  while over? == false
+  turn(board)
 end
