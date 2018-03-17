@@ -93,4 +93,6 @@ def play(board)
   turn(board)
 end
 if won?(board)
+  puts"Congrations #{winner}!"
+  elsif draw?(board)
 end
