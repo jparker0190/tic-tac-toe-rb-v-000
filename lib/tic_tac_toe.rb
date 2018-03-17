@@ -87,13 +87,10 @@ def winner(board)
     return nil
   end
 end
-def play
-  while over? == false
-    turn
-  end
-  if won?
-    puts "Congratulations #{winner}!"
-  elsif draw?
-    puts "Cat's Game!"
+def play(board)
+    plays = 0
+  until plays == 9 do
+    turn(board)
+    plays += 1
   end
 end
