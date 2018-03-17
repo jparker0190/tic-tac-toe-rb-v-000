@@ -92,3 +92,4 @@ def play(board)
   while over? == false
   turn(board)
 end
+end
