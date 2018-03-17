@@ -88,6 +88,7 @@ def winner(board)
   end
 end
 def play(board)
+    input = gets
     plays = 0
   until plays == 9 do
     turn(board)
