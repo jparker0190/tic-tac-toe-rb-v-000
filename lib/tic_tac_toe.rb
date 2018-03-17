@@ -92,5 +92,6 @@ def play(board)
   until plays == 9 do
     turn(board)
     plays += 1
+    if 
   end
 end
