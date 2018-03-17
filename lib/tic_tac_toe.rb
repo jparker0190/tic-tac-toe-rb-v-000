@@ -88,8 +88,6 @@ def winner(board)
   end
 end
 def play(board)
-  while over? == false
-  turn(board)
 if won?(board)
   puts"Congrations #{winner}!"
   elsif draw?(board)
